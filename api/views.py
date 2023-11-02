@@ -8,5 +8,9 @@ class StudetModelViewSet(viewsets.ModelViewSet):
     queryset=Student.objects.all()
     serializer_class=StudentSerializer
     
-    authentication_classes=[SessionAuthentication]
-    permission_classes=[IsAuthenticated]
+    # We Can Creat Auth-Token Using Following Command 
+    # python manage.py drf_create_token (username) 
+
+
+    # authentication_classes=[SessionAuthentication]
+    # permission_classes=[IsAuthenticated]
